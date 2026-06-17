@@ -1,12 +1,6 @@
-# AI Agent 實作工作坊（JavaScript 版）
-
-by eddie@5xcampus.com
-
----
-
 # 作業 5：向量相似度實驗
 
-本專案已成功在 `HW5` 分支中實作了一個**向量相似度實驗系統**。利用 OpenAI `text-embedding-3-small` API 將多組句子轉換為 1536 維的向量，並自行實作 Cosine Similarity 演算法計算句子間的相似度。
+已在 `HW5` 分支中實作了一個**向量相似度實驗系統**。利用 OpenAI `text-embedding-3-small` API 將多組句子轉換為 1536 維的向量，並自行實作 Cosine Similarity 演算法計算句子間的相似度。
 
 ## 📁 檔案清單與功能說明
 1. **向量與相似度函式庫**：[lib/embeddings.js](file:///home/coder/Codebase/kaochenlong/lib/embeddings.js)
@@ -49,7 +43,7 @@ by eddie@5xcampus.com
 
 ---
 
-## 💡 結果分析與說明
+## 💡 結果說明
 
 - **符合預期分析**：  
   第一組（意思相近的句子）的兩兩相似度落在 **`0.54` 至 `0.73`** 之間（平均約 `0.65`），顯著高於第二組（完全無關的句子）的 **`0.18` 至 `0.38`**（平均約 `0.26`）。這說明 Embeddings 向量對於同主題、同語意的內容有非常強烈的空間聚集特徵，即便遣詞用字不同（例如「香氣迷人」與「喝一杯」），依然能識別出它們都與咖啡相關，結果完全符合預期。
