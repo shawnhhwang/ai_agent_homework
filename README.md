@@ -1,21 +1,15 @@
-# AI Agent 實作工作坊（JavaScript 版）
-
-by eddie@5xcampus.com
-
----
-
 # 作業 3：建立迷你知識庫
 
-本專案已成功在 `HW3` 分支中實作了一個**開發工具知識庫**語意搜尋系統，將 5 種常見開發工具的簡介轉為向量嵌入（Embeddings）並儲存至 Qdrant 向量資料庫，並提供測試程式進行相關性與 Cosine Similarity 驗證。
+在 `HW3` 分支中實作了一個**開發工具知識庫**語意搜尋系統，將 5 種常見開發工具的簡介轉為向量嵌入（Embeddings）並儲存至 Qdrant 向量資料庫，並提供測試程式進行相關性與 Cosine Similarity 驗證。
 
 ## 📁 檔案清單與功能說明
-1. **知識庫資料檔**：[data/program.csv](file:///home/coder/Codebase/kaochenlong/data/program.csv)
+1. **知識庫資料檔**：[data/program.csv](/data/program.csv)
    * 收錄 5 筆開發工具（VS Code, Git, Docker, Cursor, npm）之名稱、分類及詳細說明。
-2. **Embeddings 相關與資料庫操作程式**：[lib/qdrant.js](file:///home/coder/Codebase/kaochenlong/lib/qdrant.js)
+2. **Embeddings 相關與資料庫操作程式**：[lib/qdrant.js](/lib/qdrant.js)
    * 整合 OpenAI `text-embedding-3-small` (1536維) 進行文本向量化，並實作 `searchProgram` 進行 Cosine 相似度搜尋。
-3. **知識庫初始化程式**：[scripts/embed-program.js](file:///home/coder/Codebase/kaochenlong/scripts/embed-program.js)
+3. **知識庫初始化程式**：[scripts/embed-program.js](/scripts/embed-program.js)
    * 讀取 `program.csv` 檔案，自動在 Qdrant 中建立/重置 `program` Collection，並將每筆工具簡介轉為向量存入資料庫。
-4. **搜尋測試程式**：[scripts/search-program.js](file:///home/coder/Codebase/kaochenlong/scripts/search-program.js)
+4. **搜尋測試程式**：[scripts/search-program.js](/scripts/search-program.js)
    * 包含 3 種不同語意的問法測試，執行後會自動向 Qdrant 查詢並列出最相關的前 3 個結果與 Cosine 相似度分數。
 
 ---
