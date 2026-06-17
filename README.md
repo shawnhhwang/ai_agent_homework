@@ -1,12 +1,6 @@
-# AI Agent 實作工作坊（JavaScript 版）
-
-by eddie@5xcampus.com
-
----
-
 # 作業 2：新增一個 Function Calling 工具
 
-本專案已成功在 `HW2` 分支中實作了一個**單位換算（Unit Conversion）** 工具，支援多維度單位的雙向換算，並整合至 `function_call.js` 的互動式對話助理中。
+在 `HW2` 分支中實作了一個**單位換算（Unit Conversion）** 工具，支援多維度單位的雙向換算，並整合至 `function_call.js` 的互動式對話中。
 
 ## 🌟 工具設計與 Schema 規格
 - **工具名稱**：`convert_unit`
