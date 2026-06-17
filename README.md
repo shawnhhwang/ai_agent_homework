@@ -1,12 +1,6 @@
-# AI Agent 實作工作坊（JavaScript 版）
-
-by eddie@5xcampus.com
-
----
-
 # 作業 4：整合 YouBike 與時間工具
 
-本專案已成功在 `HW4` 分支中實作了一個能同時回答「現在時間」與「區域 YouBike 站點可借車量」的智慧生活助理。
+在 `HW4` 分支中實作了一個能同時回答「現在時間」與「區域 YouBike 站點可借車量」的智慧生活助理。
 
 ## 🌟 工具設計與 Schema 規格
 本分支的主程式中，註冊了以下兩個工具：
@@ -17,7 +11,7 @@ by eddie@5xcampus.com
     *   依據台北市行政區名稱（例如大安區、信義區，請勿直接輸入「台北市」）查詢該區可租借與可還的 YouBike 2.0 站點。不需要進行經緯度與距離計算，直接透過 API 進行篩選。
 
 ### YouBike 區域查詢工具定義
-在 [tools/youbike.js](file:///home/coder/Codebase/kaochenlong/tools/youbike.js) 中實作如下：
+在 [tools/youbike.js](/tools/youbike.js) 中實作如下：
 ```javascript
 export const youbikeTool = defineTool({
   name: "get_youbike_by_district",
