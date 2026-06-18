@@ -1,7 +1,7 @@
 
 # 作業 1：打造專屬角色聊天機器人
 
-本專案已建立一個 **星座聊天機器人（Astrology Chatbot）**。
+已建立一個 **星座聊天機器人（Astrology Chatbot）**。
 
 ## 🌟 角色設定與 System Prompt
 - **角色名稱**：星座聊天機器人 ✨🔮
